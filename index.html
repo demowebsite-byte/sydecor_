@@ -1,0 +1,664 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydecor | Gorden & Interior Premium</title>
+   <link href="[https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css](https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css)" rel="stylesheet"/>
+    <style>/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #333;
+    background-color: #f4f6f9; /* Abu-abu sangat terang agar kontras dengan Navy */
+}
+
+/* Header & Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0a192f; /* Biru Navy Gelap */
+}
+
+.logo span {
+    color: #c5a850; /* Aksen Emas Lembut */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0a192f;
+}
+
+.btn-contact {
+    background-color: #25d366; /* Tetap hijau WhatsApp untuk kemudahan navigasi */
+    color: white !important;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.75)), url('logo.jpg') no-repeat center center/cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.hero-content p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: 300;
+    color: #e2e8f0;
+}
+
+.btn-cta {
+    background-color: #c5a850; /* Tombol Emas Premium */
+    color: #0a192f; /* Teks Navy Gelap di dalam tombol */
+    padding: 10px 24px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-cta:hover {
+    background-color: #b0923a;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.features h2, .products h2 {
+    margin-bottom: 35px;
+    font-size: 26px;
+    color: #0a192f; /* Judul Navy */
+    font-weight: 700;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    background: #f8fafc; /* Latar belakang kotak abu-abu bersih */
+    border-radius: 8px;
+    border-top: 4px solid #0a192f; /* Garis aksen Navy di atas kotak */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.feature-box h3 {
+    margin-bottom: 12px;
+    color: #0a192f;
+    font-size: 18px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 330px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    padding: 15px 15px 5px 15px;
+    font-size: 18px;
+    color: #0a192f; /* Nama Produk Navy */
+}
+
+.product-card p {
+    padding: 0 15px 15px 15px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+    height: 60px;
+}
+
+.btn-buy {
+    display: block;
+    margin: 0 15px;
+    background-color: #0a192f; /* Tombol beli warna Navy kokoh */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #172a45;
+}
+
+/* Footer */
+footer {
+    background-color: #0a192f; /* Footer Navy Gelap */
+    color: #cbd5e1;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* --- KODE KHUSUS UNTUK TAMPILAN HP --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 15px;
+    }
+    
+    nav a {
+        margin-left: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-box {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+.social-media {
+    padding: 40px 5%;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+}
+.social-media h3 {
+    color: #0a192f;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.social-media p {
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-btn {
+    display: block;
+    margin: 15px auto 0 auto;
+    padding: 10px 20px;
+    color: white !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    min-width: 120px;
+    text-align: center;
+}
+.instagram {
+    background-color: #c5a850; 
+    color: #0a192f !important;
+}
+/* Styling untuk Lingkaran Ikon */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(212, 175, 55, 0.1); /* Warna emas transparan */
+  border-radius: 50%; /* Membuat bentuk lingkaran sempurna */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px auto; /* Membuat posisi lingkaran otomatis di tengah kotak */
+  transition: all 0.3s ease; /* Efek transpirasi halus saat disentuh */
+}
+
+/* Styling untuk Ukuran dan Warna Ikon */
+.feature-icon i {
+  font-size: 28px;
+  color: #d4af37; /* Warna emas yang selaras dengan tema Sydecor */
+  transition: all 0.3s ease;
+}
+
+/* Efek Interaktif: Warna berubah penuh saat kotak ditekan di HP */
+.feature-box:active .feature-icon {
+  background-color: #d4af37; /* Background lingkaran berubah jadi emas penuh */
+}
+
+.feature-box:active .feature-icon i {
+  color: #ffffff; /* Warna lambang ikon berubah jadi putih */
+}
+
+/* Membuat Kotak Keunggulan Lebih Estetik */
+.feature-box {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Bayangan halus di bawah kotak */
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+/* Efek kotak agak sedikit tertekan ke bawah saat diklik */
+.feature-box:active {
+  transform: scale(0.98);
+}
+/* Gaya dasar untuk latar belakang Pop-Up */
+.modal {
+  display: none; /* Tersembunyi sebelum diklik */
+  position: fixed;
+  z-index: 9999; /* Memastikan pop-up berada di paling atas layar */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Hitam transparan */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Gaya untuk Gambar di dalam Pop-Up */
+.modal-content {
+  max-width: 85%;
+  max-height: 70%;
+  border-radius: 8px;
+  animation: zoomIn 0.3s ease; /* Efek animasi muncul membesar */
+}
+
+/* Teks keterangan di bawah gambar */
+#captionText {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Tombol Tutup (X) */
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Animasi Zoom-In Halus */
+@keyframes zoomIn {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+/* 1. Membuat efek bayangan berdenyut keluar */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(13, 27, 42, 0.5); /* Warna navy sesuai tombolmu dengan transparansi */
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(13, 27, 42, 0); /* Bayangan melebar lalu menghilang */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(13, 27, 42, 0);
+  }
+}
+
+/* 2. Terapkan animasi ke tombol Tanya Harga */
+.btn-buy {
+  display: inline-block;
+  animation: pulse-glow 2s infinite; /* Berdenyut terus-menerus setiap 2 detik */
+  transition: transform 0.2s ease;
+}
+
+/* 3. Efek tambahan: Jika tombol ditekan di HP, dia akan mengecil sedikit (efek klik nyata) */
+.btn-buy:active {
+  transform: scale(0.96);
+}
+.feature-icon {
+  width: 100px;         /* Sesuaikan dengan ukuran lingkaran Anda saat ini */
+  height: 100px;        /* Sesuaikan dengan ukuran lingkaran Anda saat ini */
+  border-radius: 50%;
+  overflow: hidden;     /* Ini wajib ada agar foto otomatis terpotong menjadi bulat */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+/* Tambahkan class baru ini di bawah .feature-icon untuk mengatur fotonya */
+.feature-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* Ini wajib agar foto tidak penyet/melar */
+}
+/* Gaya Section Portofolio */
+.portfolio-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #0d1b2a;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+/* Grid Layout untuk Foto */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: 250px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Efek Zoom saat Foto Disentuh */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Lapisan Teks di Atas Foto */
+.portfolio-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Gaya Testimoni */
+.testimonial-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 5px solid #c5a85c; /* Aksen warna emas Sydecor */
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  color: #0d1b2a;
+  font-weight: bold;
+}
+
+</style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Logo SultanDecor" class="logo-img">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#keunggulan">Keunggulan</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+
+  <div class="hero-content">
+    <h1>Transformasi Ruangan Anda Menjadi Lebih Mewah & Nyaman</h1>
+    <p>Penyedia gorden premium kustom terbaik untuk rumah, kantor, dan sekolah. Survei dan pasang gratis!</p>
+    <a href="https://wa.me/6283141379356" class="btn-cta" target="_blank">Konsultasi Gratis via WhatsApp</a>
+  </div>
+</section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="features">
+        <h2>Mengapa Memilih Kami?</h2>
+        <div class="feature-container">
+<div class="feature-box" onclick="openModal('gorden1.jpg', 'Koleksi Bahan Premium Sydecor')">
+<div class="feature-icon">
+  <img src="semplegorden.jpg" alt="Bahan Premium" class="feature-img">
+</div>
+  
+                <h3>Bahan Premium</h3>
+                <p>Pilihan kain blackout, lokal, dan impor berkualitas tinggi serta tahan lama.</p>
+            </div>
+
+    <div class="feature-box" onclick="openModal('gorden1.jpg', 'Proses Pengukuran Presisi Jendela')">
+ <div class="feature-icon">
+  <img src="freepemasangan.jpg" alt="Bisa Kustom Ukuran" class="feature-img">
+</div>
+      <h3>Bisa Kustom Ukuran</h3>
+      <p>Ukuran gorden disesuaikan presisi dengan jendela ruangan Anda.</p>
+    </div>
+    
+    <div class="feature-box" onclick="openModal('gorden1.jpg', 'Tim Pemasangan Gorden di Lokasi')">
+<div class="feature-icon">
+  <img src="bisacostum.jpg" alt="Gratis Pasang dan Survei" class="feature-img">
+</div>
+      <h3>Gratis Pasang & Survei</h3>
+      <p>Tim kami siap datang ke lokasi untuk ukur jendela dan pasang langsung.</p>
+    </div>
+
+  
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="products">
+        <h2>Koleksi Terbaik Produk Kami</h2>
+        <div class="product-grid">
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img src="gorden1.jpg" alt="Gorden Minimalis Blackout">
+                <h3>Gorden Minimalis Blackout</h3>
+                <p>Menahan sinar matahari hingga 100%, cocok untuk kamar tidur utama.</p>
+                <a href="https://wa.me/6283141379356?text=Halo%20Sydecor,%20saya%20tertarik%20dengan%20Gorden%20Minimalis%20Blackout" class="btn-buy" target="_blank">Tanya Harga</a>
+            </div>
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img src="gorden2.jpg" alt="Gorden Otomatis / Motorized">
+                <h3>Gorden Otomatis (Motorized)</h3>
+                <p>Sistem modern menggunakan remote control atau smartphone.</p>
+                <a href="https://wa.me/6283141379356?text=Halo%20Sydecor,%20saya%20tertarik%20dengan%20Gorden%20Otomatis" class="btn-buy" target="_blank">Tanya Harga</a>
+            </div>
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <img src="blinds1.jpg" alt="Gorden Kantor / Blinds">
+                <h3>Vertical & Roller Blinds</h3>
+                <p>Tampilan simpel dan profesional, sangat cocok untuk area kantor dan sekolah.</p>
+                <a href="https://wa.me/6283141379356?text=Halo%20Sydecor,%20saya%20tertarik%20dengan%20Roller%20Blinds" class="btn-buy" target="_blank">Tanya Harga</a>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION BUKTI SOSIAL / PORTOFOLIO -->
+<section class="portfolio-section">
+  <div class="container">
+    <h2 class="section-title">Hasil Pemasangan Kami</h2>
+    <p class="section-subtitle">Beberapa dokumentasi proyek gorden dan interior yang telah kami selesaikan dengan presisi.</p>
+    
+    <!-- Grid Foto Hasil Pasang -->
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="hasil1.jpg" alt="Pemasangan Gorden Rumah Mewah">
+        <div class="portfolio-overlay">
+          <span>Gorden Rumah Tinggal</span>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="blinds1.jpg" alt="Pemasangan Blinds Kantor">
+        <div class="portfolio-overlay">
+          <span>Vertical Blinds Kantor</span>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="sekolah.jpg" alt="Pemasangan Gorden Sekolah">
+        <div class="portfolio-overlay">
+          <span>Gorden Aula Sekolah</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimoni Singkat -->
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Pelayanan dari Sydecor sangat memuaskan. Ukurannya benar-benar pas dan presisi, pengerjaannya juga cepat dan rapi banget!"</p>
+        <h4 class="testimonial-author">- Ibu Rahma, Jakarta Timur</h4>
+      </div>
+    </div>
+  </div>
+</section>
+        <!-- Sosial Media Section -->
+    <section class="social-media">
+        <h3>Ikuti Sosial Media Kami</h3>
+        <p>Lihat hasil pemasangan gorden dan interior terbaru kami di media sosial</p>
+        <div class="social-links">
+<a href="https://instagram.com/sydecor_" class="social-btn instagram" target="_blank">Instagram</a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Sydecor. All Rights Reserved. | Pondok Kopi Jakarta Timur , Indonesia.</p>
+    </footer>
+
+</body>
+<!-- Struktur Pop-Up Gambar (Modal) -->
+<div id="imageModal" class="modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="imgTarget">
+  <div id="captionText"></div>
+</div>
+
+<script>
+
